@@ -1,0 +1,134 @@
+<mxfile host="65bd71144e">
+    <diagram id="vr3E3tX2wvVX0EuAh0Dt" name="Page-1">
+        <mxGraphModel dx="990" dy="567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="27" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="2" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="2" target="11" edge="1">
+                    <mxGeometry x="0.3833" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="2" value="Message&lt;br&gt;Banner" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="387" y="384" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Comment&lt;br&gt;Count" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="247" y="384" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="5" target="9" edge="1">
+                    <mxGeometry x="0.6408" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="5" target="10" edge="1">
+                    <mxGeometry x="0.7023" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="5" target="2" edge="1">
+                    <mxGeometry x="-0.0108" relative="1" as="geometry">
+                        <mxPoint x="422" y="313" as="sourcePoint"/>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="5" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="422" y="313" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="422" y="320"/>
+                            <mxPoint x="282" y="320"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="63" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;endArrow=none;endFill=0;" parent="1" source="5" target="8" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="422" y="320"/>
+                            <mxPoint x="572" y="320"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="App" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="387" y="221" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Todo&lt;br&gt;Count" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="537" y="384" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.4;entryY=-0.031;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" parent="1" source="9" target="16" edge="1">
+                    <mxGeometry x="0.442" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="9" target="15" edge="1">
+                    <mxGeometry x="0.3833" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="Commenting" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="107" y="384" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="10" target="13" edge="1">
+                    <mxGeometry x="0.55" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="10" target="14" edge="1">
+                    <mxGeometry x="0.55" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" value="Todos" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="677" y="384" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Error&lt;br&gt;Message" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="457" y="504" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Info&lt;br&gt;Message" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="317" y="504" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Add&lt;br&gt;Todo" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="607" y="504" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Todo&lt;br&gt;List" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="747" y="504" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Comment&lt;br&gt;List" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="177" y="504" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Add&lt;br&gt;Comment" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" parent="1" vertex="1">
+                    <mxGeometry x="37" y="504" width="70" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;h1&gt;useContext()&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span&gt;State is managed by the context&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;State is available to all child components of the Provider component&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="26" y="17" width="424" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="Store" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="118" width="150" height="103" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="comments&lt;br&gt;commentsError&lt;br&gt;handleCommentAdd&lt;br&gt;handleCommentDelete" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2A2A2A;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="490" y="141" width="130" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="Store" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#999999;verticalAlign=top;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="118" width="150" height="103" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="todos&lt;br&gt;todosError&lt;br&gt;handleTodoAdd&lt;br&gt;handleTodoDelete" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2A2A2A;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="141" width="130" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="Comments" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" parent="1" vertex="1">
+                    <mxGeometry x="317" y="348" width="70" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="Todos" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" parent="1" vertex="1">
+                    <mxGeometry x="467" y="348" width="70" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="Comments" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+                    <mxGeometry x="410" y="600" width="70" height="36" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="Todos" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" vertex="1" parent="1">
+                    <mxGeometry x="510" y="600" width="70" height="36" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
