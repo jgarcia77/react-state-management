@@ -1,8 +1,12 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { selectCommentsError } from '../../state/commentingSlice';
 import { ErrorMessage } from './ErrorMessage';
 import { InfoMessage } from './InfoMessage'
 
-const MessageBanner = ({ commentsError, todosError }) => {
+const MessageBanner = ({ todosError }) => {
+    const commentsError = useSelector(selectCommentsError);
+    
     return (
         <div className="message-banner">
             {!commentsError && <InfoMessage message="Please enter a comment" className="info-message__commenting" />}

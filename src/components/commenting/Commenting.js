@@ -2,13 +2,11 @@ import React from 'react';
 import { AddComment } from './AddComment';
 import { CommentList } from './CommentList';
 
-const Commenting = ({ onAdd, onDelete, comments}) => {
+const Commenting = () => {
     return (
         <div className="dashed-wrapper domain-container content__commenting">
-            <AddComment  onAdd={onAdd} />
-            <CommentList 
-                comments={comments}
-                onDelete={onDelete} />
+            <AddComment />
+            <CommentList />
         </div>
     );
 };

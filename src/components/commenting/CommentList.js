@@ -1,14 +1,22 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectComments, getCommentsThunk, deleteCommentThunk } from '../../state/commentingSlice';
 import { Renders } from '../common/Renders';
 
-export const CommentList = ({ comments, onDelete }) => {
+export const CommentList = () => {
+    const comments = useSelector(selectComments);
+    const dispatch = useDispatch();
     const renders = useRef(0);
     const renderItems = comments.length !== 0;
 
     const handleDelete = (event, id) => {
         event.preventDefault();
-        onDelete(id);
+        dispatch(deleteCommentThunk(id));
     }
+
+    useEffect(() => {
+        dispatch(getCommentsThunk());
+    }, []);
 
     return (
         <div className="domain-list comment-list">

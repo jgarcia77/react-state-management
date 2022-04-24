@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { postCommentThunk } from '../../state/commentingSlice';
 
-export const AddComment = ({ onAdd = () => {} }) => {
+export const AddComment = () => {
+    const dispatch = useDispatch();
     const [comment, setComment] = useState('');
 
     const handleAdd = () => {
-        onAdd(comment);
+        dispatch(postCommentThunk(comment));
         setComment('');
     }
 
