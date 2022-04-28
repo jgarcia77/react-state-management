@@ -1,11 +1,13 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectCommentsError } from '../../state/commentingSlice';
+import { selectTodosError } from '../../state/todosSlice';
 import { ErrorMessage } from './ErrorMessage';
 import { InfoMessage } from './InfoMessage'
 
-const MessageBanner = ({ todosError }) => {
+const MessageBanner = () => {
     const commentsError = useSelector(selectCommentsError);
+    const todosError = useSelector(selectTodosError);
     
     return (
         <div className="message-banner">
