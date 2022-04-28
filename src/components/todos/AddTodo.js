@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { postTodoThunk } from '../../state/todosSlice';
 
-export const AddTodo = ({ onAdd = () => {} }) => {
+export const AddTodo = () => {
+    const dispatch = useDispatch();
     const [todo, setTodo] = useState('');
 
     const handleAdd = () => {
-        onAdd(todo);
+        dispatch(postTodoThunk(todo));
         setTodo('');
     }
 

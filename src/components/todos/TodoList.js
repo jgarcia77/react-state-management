@@ -1,14 +1,22 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { selectTodos, getTodosThunk, deleteTodoThunk } from '../../state/todosSlice';
 import { Renders } from '../common/Renders';
 
-export const TodoList = ({ todos, onDelete }) => {
+export const TodoList = () => {
+    const todos = useSelector(selectTodos);
+    const dispatch = useDispatch();
     const renders = useRef(0);
     const renderItems = todos.length !== 0;
 
     const handleDelete = (event, id) => {
         event.preventDefault();
-        onDelete(id);
+        dispatch(deleteTodoThunk(id));
     }
+
+    useEffect(() => {
+        dispatch(getTodosThunk());
+    }, []);
 
     return (
         <div className="domain-list todo-list">
