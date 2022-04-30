@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { observer } from "mobx-react-lite"
+import { todosStore } from '../../state/GlobalState';
 
-export const AddTodo = ({ onAdd = () => {} }) => {
+export const AddTodo = observer(() => {
     const [todo, setTodo] = useState('');
 
     const handleAdd = () => {
-        onAdd(todo);
+        todosStore.addTodo(todo);
         setTodo('');
     }
 
@@ -17,4 +19,4 @@ export const AddTodo = ({ onAdd = () => {} }) => {
         </div>
         
     );
-}
+});
