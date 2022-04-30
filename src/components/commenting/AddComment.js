@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { observer } from "mobx-react-lite"
+import { commentingStore } from '../../state/GlobalState';
 
-export const AddComment = ({ onAdd = () => {} }) => {
+export const AddComment = observer(() => {
     const [comment, setComment] = useState('');
 
     const handleAdd = () => {
-        onAdd(comment);
+        commentingStore.addComment(comment);
         setComment('');
     }
 
@@ -17,4 +19,4 @@ export const AddComment = ({ onAdd = () => {} }) => {
         </div>
         
     );
-}
+});

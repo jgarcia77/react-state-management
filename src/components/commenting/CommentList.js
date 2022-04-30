@@ -1,14 +1,20 @@
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
+import { observer } from "mobx-react-lite"
 import { Renders } from '../common/Renders';
+import { commentingStore } from '../../state/GlobalState';
 
-export const CommentList = ({ comments, onDelete }) => {
+export const CommentList = observer(() => {
     const renders = useRef(0);
-    const renderItems = comments.length !== 0;
+    const renderItems = commentingStore.count !== 0;
 
     const handleDelete = (event, id) => {
         event.preventDefault();
-        onDelete(id);
+        commentingStore.removeComment(id);
     }
+
+    useEffect(() => {
+        commentingStore.loadComments();
+    }, []);
 
     return (
         <div className="domain-list comment-list">
@@ -17,9 +23,9 @@ export const CommentList = ({ comments, onDelete }) => {
                 Comment list is empty
             </div>}
             {renderItems && <ul className="domain-ul">
-                {comments.map(({ id, value }) => <li key={id}>{value} <a href="" onClick={(e) => handleDelete(e, id)}>remove</a></li>)}
+                {commentingStore.comments.map(({ id, value }) => <li key={id}>{value} <a href="" onClick={(e) => handleDelete(e, id)}>remove</a></li>)}
             </ul>}
         </div>
         
     );
-}
+});
