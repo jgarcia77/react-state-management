@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { useGlobalStateContext } from '../../state/GlobalState';
 
-export const AddComment = ({ onAdd = () => {} }) => {
+export const AddComment = () => {
+    const { handleCommentAdd } = useGlobalStateContext();
     const [comment, setComment] = useState('');
 
     const handleAdd = () => {
-        onAdd(comment);
+        handleCommentAdd(comment);
         setComment('');
     }
 

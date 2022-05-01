@@ -1,13 +1,15 @@
 import { useRef } from 'react';
 import { Renders } from '../common/Renders';
+import { useGlobalStateContext } from '../../state/GlobalState';
 
-export const TodoList = ({ todos, onDelete }) => {
+export const TodoList = () => {
+    const { todos, handleTodoDelete } = useGlobalStateContext();
     const renders = useRef(0);
     const renderItems = todos.length !== 0;
 
     const handleDelete = (event, id) => {
         event.preventDefault();
-        onDelete(id);
+        handleTodoDelete(id);
     }
 
     return (

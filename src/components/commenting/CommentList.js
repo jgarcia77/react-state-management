@@ -1,13 +1,15 @@
 import { useRef } from 'react';
 import { Renders } from '../common/Renders';
+import { useGlobalStateContext } from '../../state/GlobalState';
 
-export const CommentList = ({ comments, onDelete }) => {
+export const CommentList = () => {
+    const { comments, handleCommentDelete } = useGlobalStateContext();
     const renders = useRef(0);
     const renderItems = comments.length !== 0;
 
     const handleDelete = (event, id) => {
         event.preventDefault();
-        onDelete(id);
+        handleCommentDelete(id);
     }
 
     return (

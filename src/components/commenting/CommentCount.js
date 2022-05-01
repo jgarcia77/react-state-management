@@ -1,12 +1,15 @@
 import React, { useRef } from 'react';
 import { Renders } from '../common/Renders';
+import { useGlobalStateContext } from '../../state/GlobalState';
 
-const CommentCount = ({ value }) => {
+const CommentCount = () => {
+    const { comments } = useGlobalStateContext();
+
     const renders = useRef(0);
     return (
         <div className="dashed-wrapper domain-container comment-count">
             <Renders name="CommentCount" value={renders.current++} />
-            <div>Total comments: {value}</div>
+            <div>Total comments: {comments.length}</div>
         </div>
     );
 };

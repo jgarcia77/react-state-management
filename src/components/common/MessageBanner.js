@@ -1,8 +1,11 @@
 import React from 'react';
 import { ErrorMessage } from './ErrorMessage';
 import { InfoMessage } from './InfoMessage'
+import { useGlobalStateContext } from '../../state/GlobalState';
 
-const MessageBanner = ({ commentsError, todosError }) => {
+const MessageBanner = () => {
+    const { commentsError, todosError } = useGlobalStateContext();
+    
     return (
         <div className="message-banner">
             {!commentsError && <InfoMessage message="Please enter a comment" className="info-message__commenting" />}

@@ -1,10 +1,12 @@
 import { useState } from 'react';
+import { useGlobalStateContext } from '../../state/GlobalState';
 
-export const AddTodo = ({ onAdd = () => {} }) => {
+export const AddTodo = () => {
+    const { handleTodoAdd } = useGlobalStateContext();
     const [todo, setTodo] = useState('');
 
     const handleAdd = () => {
-        onAdd(todo);
+        handleTodoAdd(todo);
         setTodo('');
     }
 
