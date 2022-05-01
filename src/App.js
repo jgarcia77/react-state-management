@@ -16,7 +16,7 @@ function App() {
     <>
       <Renders name="App" value={renders.current++} />
       <header className="dashed-wrapper">
-          <Title text="State Management in React" subText="useContext Instructional" />
+          <Title text="State Management in React" subText="useContext Implementation" />
       </header>
       <main>
         <MessageBanner />

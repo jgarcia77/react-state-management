@@ -1,43 +1,6 @@
-import React, { createContext, useContext } from 'react';
+import constate from "constate";
 import { useGlobalState } from './useGlobalState';
 
-const GlobalStateContext = createContext({
-    comments: [],
-    commentsError: '',
-    todos: [],
-    todosError: '',
-    handleCommentAdd: async (comment) => {},
-    handleCommentDelete: async (id) => {},
-    handleTodoAdd: async (todo) => {},
-    handleTodoDelete: async (id) => {}
-});
+const [GlobalStateProvider, useGlobalStateContext] = constate(useGlobalState);
 
-export const GlobalStateProvider = ({children}) => {
-    const {
-        comments,
-        commentsError,
-        todos,
-        todosError,
-        handleCommentAdd,
-        handleCommentDelete,
-        handleTodoAdd,
-        handleTodoDelete
-    } = useGlobalState();
-
-    return (
-        <GlobalStateContext.Provider value={{
-            comments,
-            commentsError,
-            todos,
-            todosError,
-            handleCommentAdd,
-            handleCommentDelete,
-            handleTodoAdd,
-            handleTodoDelete
-        }}>
-            {children}
-        </GlobalStateContext.Provider>
-    );
-};
-
-export const useGlobalStateContext = () => useContext(GlobalStateContext);
+export { GlobalStateProvider, useGlobalStateContext };
